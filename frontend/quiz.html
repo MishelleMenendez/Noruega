@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noruega</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="public/bandera.png" alt="Icono de Noruega">
+        Noruega
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cultura.html">Cultura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="naturaleza.html">Naturaleza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="quiz.html">Cuestionario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">¿Cuánto sabes de Noruega?</h1>
+
+    <div class="progress mb-4">
+      <div class="progress-bar" role="progressbar" id="progress-bar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <form id="quiz-form">
+      <div class="mb-3">
+        <label for="username" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="username" placeholder="Introduce tu nombre" required>
+      </div>
+      
+      <!-- Preguntas -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>1. ¿Cuál es la capital de Noruega?</h5>
+          <div>
+            <input type="radio" name="q1" value="Bergen" required> Bergen<br>
+            <input type="radio" name="q1" value="Oslo"> Oslo<br>
+            <input type="radio" name="q1" value="Stavanger"> Stavanger<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>2. ¿Qué forma geográfica es característica de Noruega?</h5>
+          <div>
+            <input type="radio" name="q2" value="Una entrada de mar" required> Una entrada de mar<br>
+            <input type="radio" name="q2" value="Una montaña"> Una montaña<br>
+            <input type="radio" name="q2" value="Un desierto"> Un desierto<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>3. ¿Qué festival es famoso en Noruega?</h5>
+          <div>
+            <input type="radio" name="q3" value="Glastonbury" required> Glastonbury<br>
+            <input type="radio" name="q3" value="Coachella"> Coachella<br>
+            <input type="radio" name="q3" value="Øya Festival"> Øya Festival<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>4. ¿Qué animal es un símbolo de Noruega?</h5>
+          <div>
+            <input type="radio" name="q4" value="Elefante" required> Elefante<br>
+            <input type="radio" name="q4" value="Reno"> Reno<br>
+            <input type="radio" name="q4" value="Tigre"> Tigre<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>5. ¿Qué deporte de invierno es popular en Noruega?</h5>
+          <div>
+            <input type="radio" name="q5" value="Esquí" required> Esquí<br>
+            <input type="radio" name="q5" value="Surf"> Surf<br>
+            <input type="radio" name="q5" value="Fútbol"> Fútbol<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>6. ¿Cuál es un fenómeno natural fascinante que se puede ver en Noruega?</h5>
+          <div>
+            <input type="radio" name="q6" value="Aurora Boreal" required> Aurora Boreal<br>
+            <input type="radio" name="q6" value="Tornado"> Tornado<br>
+            <input type="radio" name="q6" value="Volcán"> Volcán<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>7. ¿Qué es un fiordo?</h5>
+          <div>
+            <input type="radio" name="q7" value="Una especie de árbol" required> Una especie de árbol<br>
+            <input type="radio" name="q7" value="Una entrada de mar entre montañas"> Una entrada de mar entre montañas<br>
+            <input type="radio" name="q7" value="Un tipo de ave"> Un tipo de ave<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>8. ¿Qué animal es conocido como el mayor depredador terrestre del Ártico?</h5>
+          <div>
+            <input type="radio" name="q8" value="Oso Polar" required> Oso Polar<br>
+            <input type="radio" name="q8" value="Lobo"> Lobo<br>
+            <input type="radio" name="q8" value="León Marino"> León Marino<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>9. ¿Qué es lo que hace que los fiordos noruegos sean únicos?</h5>
+          <div>
+            <input type="radio" name="q9" value="Son formaciones artificiales" required> Son formaciones artificiales<br>
+            <input type="radio" name="q9" value="Son esculpidos por glaciares"> Son esculpidos por glaciares<br>
+            <input type="radio" name="q9" value="Son ríos subterráneos"> Son ríos subterráneos<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5>10. ¿Cuál es el hábitat del oso polar en Noruega?</h5>
+          <div>
+            <input type="radio" name="q10" value="Bosques tropicales" required> Bosques tropicales<br>
+            <input type="radio" name="q10" value="Regiones septentrionales del Ártico"> Regiones septentrionales del Ártico<br>
+            <input type="radio" name="q10" value="Desiertos cálidos"> Desiertos cálidos<br>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-submit">Enviar</button>
+    </form>
+    
+    <div id="result" class="mt-3"></div>
+  </div>
+
+  <!-- Modal de resultados -->
+  <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultModalLabel">Resultados del Cuestionario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="result-message"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center mt-5 py-3">
+    <p>&copy; 2024 Noruega. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript para manejar el progreso del cuestionario
+    const form = document.getElementById('quiz-form');
+    const progressBar = document.getElementById('progress-bar');
+    const questions = form.querySelectorAll('.card');
+    const totalQuestions = questions.length;
+    
+    form.addEventListener('change', () => {
+      let answeredQuestions = 0;
+      questions.forEach((question) => {
+        if (question.querySelector('input:checked')) {
+          answeredQuestions++;
+        }
+      });
+      const progressPercentage = (answeredQuestions / totalQuestions) * 100;
+      progressBar.style.width = `${progressPercentage}%`;
+      progressBar.setAttribute('aria-valuenow', progressPercentage);
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // Lógica para calcular el puntaje y mostrar el modal
+      let score = 0;
+      const answers = {
+        q1: 'Oslo',
+        q2: 'Una entrada de mar',
+        q3: 'Øya Festival',
+        q4: 'Reno',
+        q5: 'Esquí',
+        q6: 'Aurora Boreal',
+        q7: 'Una entrada de mar entre montañas',
+        q8: 'Oso Polar',
+        q9: 'Son esculpidos por glaciares',
+        q10: 'Regiones septentrionales del Ártico'
+      };
+
+      for (let [question, correctAnswer] of Object.entries(answers)) {
+        if (form.querySelector(`input[name="${question}"][value="${correctAnswer}"]`).checked) {
+          score++;
+        }
+      }
+
+      const resultMessage = `Has obtenido ${score} de ${totalQuestions} respuestas correctas.`;
+      document.getElementById('result-message').textContent = resultMessage;
+      const resultModal = new bootstrap.Modal(document.getElementById('resultModal'));
+      resultModal.show();
+    });
+  </script>
+</body>
+</html>

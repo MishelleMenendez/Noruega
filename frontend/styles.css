@@ -1,0 +1,10 @@
+/* Aplica una transición suave para la transformación y la sombra */
+.col-md-4, .card.mb-4, .card.h-100, .card.mb-3{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Aplica el efecto de expansión y sombra cuando se pasa el ratón sobre la tarjeta */
+.col-md-4:hover, .card.mb-4:hover, .card.h-100:hover,.card.mb-3:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
